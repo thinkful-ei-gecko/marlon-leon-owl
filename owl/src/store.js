@@ -83,7 +83,17 @@ const STORE = {
             type: 'leave-stage',
             timestamp: 1548852724247
         }
-    ]
+    ],
+    notation : {
+        'thumbs-up' : 'gave a thumbs up',
+        'thumbs-down' : 'gave a thumbs down',
+        'raise-hand' : 'raised their hand',
+        join : 'joined the chat',
+        leave : 'left the chat',
+        'join-stage' : 'joined the stage',
+        'leave-stage' : 'left the stage',
+        clap : 'clapped'
+    }
 }
 
 export default STORE;

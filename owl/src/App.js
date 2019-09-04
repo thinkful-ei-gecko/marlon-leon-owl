@@ -21,7 +21,7 @@ function App(props) {
                   <ParticipantList participants={props.store.participants} />
                 </div>
                 <div className='chatLog'>
-                  <ChatLog chatEvents={props.store.chatEvents} particpants={props.store.participants}/>
+                  <ChatLog chatEvents={props.store.chatEvents} participants={props.store.participants} notation={props.store.notation}/>
                 </div>
             </div>
             <div className='stageRight'>
