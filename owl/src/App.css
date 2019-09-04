@@ -17,23 +17,28 @@ html,body {
 .mainContainer {
   display: flex;
   flex: 1;
-  background-color: orange;
+  background-color: lightgray;
 }
 
 .bottomFooter {
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid gray;
+  height: 70px;
 }
 
 .stageLeft {
-  background-color: red;
+  background-color: white;
   display: flex;
   flex-direction: column;
 }
 
 .topBar {
-  height: 30px;
-  background-color: green;
+  height: 70px;
+  background-color: white;
   flex: 0;
+  border-bottom: 1px solid gray;
 }
 
 .topBar ul {
@@ -53,7 +58,7 @@ html,body {
 }
 
 .participantList, .chatLog {
-  flex: 0;
+  flex: 1;
 }
 
 .stageLeft img {
@@ -61,21 +66,61 @@ html,body {
   border-radius: 25px;
 }
 
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+.participantList {
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.participantList li {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.participantList h5 {
+  color: black;
+  font-weight: bold;
+}
+
+.participantList h6 {
+  color: gray;
+  font-weight: 100;
+}
+
 
 .chatLog {
-  background-color: blue;
+  background-color: white;
   flex: 1;
+  border-right: 1px solid gray;
 }
 
 .topBar.right {
   flex: 0;
+  border-left: 1px solid gray;
 }
 
 .stageLog {
-  /* display: flex;
   flex: 1;
-  flex-wrap: wrap;
-  padding: 20%; */
-  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
+.personChat {
+  text-align: center;
+}
+
+.personChatMessage {
+  text-align: left;
+  display: flex;
+}
+
+.chatLog li {
+  margin-top: 15px;
+}

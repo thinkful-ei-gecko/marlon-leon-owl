@@ -21,7 +21,7 @@ function App(props) {
                   <ParticipantList participants={props.store.participants} />
                 </div>
                 <div className='chatLog'>
-                <h2>Chat</h2>
+                  <h2>Chat</h2>
                   <ChatLog chatEvents={props.store.chatEvents} participants={props.store.participants} notation={props.store.notation}/>
                 </div>
             </div>
@@ -39,7 +39,8 @@ function App(props) {
             </div>
         </section>
         <section className='bottomFooter'>
-          <p>Test data 2 ---- fillllllll </p>
+          <div class="randomButtons">Button 1 2 3 and 4</div>
+          <div class="joinstuff">Join stage</div>
         </section>
     </main>
   );

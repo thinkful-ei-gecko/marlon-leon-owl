@@ -7,8 +7,10 @@ function sortMessageType(event, participants, notation){
         return (
             <div className="personChatMessage">
                 <img src={obj.avatar} alt='Avatar ID'></img>
-                <h5>{obj.name} <span>{Date(event.timeStamp)}</span></h5>
-                <p>{event.message}</p>
+                <div class="partInfo">
+                    <h5>{obj.name} <span>{Date(event.timeStamp)}</span></h5>
+                    <p>{event.message}</p>
+                </div>
             </div>
         )
     }
