@@ -6,21 +6,22 @@ import './App.css';
 
 function App(props) {
   return (
-   
     <main className='App'>
         <section className='mainContainer'>
             <div className='stageLeft'>
                 <div className='topBar left'>
                     <ul>
-                      <li className="switchViewOfLeftSide">Chat</li>
-                      <li className="switchViewOfLeftSide">Participants (2)</li>
+                      <li>Chat</li>
+                      <li>Participants (2)</li>
                       <li>Buttons</li>
                     </ul>
                 </div>
                 <div className='participantList'>
+                  <h2>Users</h2>
                   <ParticipantList participants={props.store.participants} />
                 </div>
                 <div className='chatLog'>
+                <h2>Chat</h2>
                   <ChatLog chatEvents={props.store.chatEvents} participants={props.store.participants} notation={props.store.notation}/>
                 </div>
             </div>
