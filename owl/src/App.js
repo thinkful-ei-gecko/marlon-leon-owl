@@ -1,4 +1,5 @@
 import React from 'react';
+import ParticipantList from './ParticipantList';
 import Stage from './Stage';
 import './App.css';
 
@@ -10,13 +11,13 @@ function App(props) {
             <div className='stageLeft'>
                 <div className='topBar left'>
                     <ul>
-                      <li>Chat</li>
-                      <li>Participants (2)</li>
+                      <li className="switchViewOfLeftSide">Chat</li>
+                      <li className="switchViewOfLeftSide">Participants (2)</li>
                       <li>Buttons</li>
                     </ul>
                 </div>
                 <div className='chatLog'>
-
+                  <ParticipantList participants={props.store.participants} />
                 </div>
             </div>
             <div className='stageRight'>

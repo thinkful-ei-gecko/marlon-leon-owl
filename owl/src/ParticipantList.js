@@ -1,20 +1,32 @@
 import React from 'react';
 
-// function ParticipantList(){
-//     return (
-//     <div className='stageLeft'>
-//     <div className='topBar left'>
-//         <ul>
-//           <li>Chat</li>
-//           <li>Participants (2)</li>
-//           <li>Buttons</li>
-//         </ul>
-//     </div>
-//     <div className='chatLog'>
-    
-//     </div>
-// </div>
-// )
-//     }
 
-//     export default ParticipantList;
+
+function ParticipantList(props){
+  return (
+    <ul>
+                {console.log(props)}
+        {
+          props.participants.filter(participant => participant.inSession === true ).map(participant => {
+          return(
+          <li>
+            <img src={participant.avatar} alt="User Avatar" />
+            <h5>{participant.name}</h5>
+            <h6>{participant.onStage ? 'on stage' : 'in session'}</h6>
+          </li>
+        )})}
+        {props.participants.filter(participant => participant.inSession === false ).map(participant => {
+          return (
+            <li>
+              <img src={participant.avatar} alt="User Avatar" />
+              <h5>{participant.name}</h5>
+              <h6>left session</h6>
+          </li>
+        )})
+        }
+
+    </ul>
+  )
+}
+
+export default ParticipantList;
