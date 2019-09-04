@@ -1,8 +1,10 @@
 import React from 'react';
+import Stage from './Stage';
 import './App.css';
 
-function App() {
+function App(props) {
   return (
+   
     <main className='App'>
         <section className='mainContainer'>
             <div className='stageLeft'>
@@ -14,7 +16,7 @@ function App() {
                     </ul>
                 </div>
                 <div className='chatLog'>
-                
+
                 </div>
             </div>
             <div className='stageRight'>
@@ -26,7 +28,7 @@ function App() {
                     </ul>
                 </div>
                 <div className='stageLog'>
-
+                 <Stage participants={props.store.participants}/>
                 </div>
             </div>
         </section>
