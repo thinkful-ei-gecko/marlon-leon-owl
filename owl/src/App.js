@@ -1,6 +1,7 @@
 import React from 'react';
 import ParticipantList from './ParticipantList';
 import Stage from './Stage';
+import ChatLog from './ChatLog'
 import './App.css';
 
 function App(props) {
@@ -16,8 +17,11 @@ function App(props) {
                       <li>Buttons</li>
                     </ul>
                 </div>
-                <div className='chatLog'>
+                <div className='participantList'>
                   <ParticipantList participants={props.store.participants} />
+                </div>
+                <div className='chatLog'>
+                  <ChatLog chatEvents={props.store.chatEvents} particpants={props.store.participants}/>
                 </div>
             </div>
             <div className='stageRight'>
