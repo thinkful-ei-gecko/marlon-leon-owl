@@ -4,6 +4,14 @@ import Stage from './Stage';
 import ChatLog from './ChatLog'
 import './App.css';
 
+App.defaultProps = {
+  store : {
+    participants : [],
+    chatEvents : [],
+    notation: {}
+  }
+}
+
 function App(props) {
   return (
     <main className='App'>
@@ -16,14 +24,8 @@ function App(props) {
                       <li>Buttons</li>
                     </ul>
                 </div>
-                <div className='participantList'>
-                  <h2>Users</h2>
                   <ParticipantList participants={props.store.participants} />
-                </div>
-                <div className='chatLog'>
-                  <h2>Chat</h2>
                   <ChatLog chatEvents={props.store.chatEvents} participants={props.store.participants} notation={props.store.notation}/>
-                </div>
             </div>
             <div className='stageRight'>
                 <div className='topBar right'>
@@ -33,14 +35,12 @@ function App(props) {
                         <li>Leon's Screen X</li>
                     </ul>
                 </div>
-                <div className='stageLog'>
                  <Stage participants={props.store.participants}/>
-                </div>
             </div>
         </section>
         <section className='bottomFooter'>
-          <div class="randomButtons">Button 1 2 3 and 4</div>
-          <div class="joinstuff">Join stage</div>
+          <div className="randomButtons">Button 1 2 3 and 4</div>
+          <div className="joinstuff">Join stage</div>
         </section>
     </main>
   );

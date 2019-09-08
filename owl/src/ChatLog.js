@@ -25,17 +25,20 @@ function sortMessageType(event, participants, notation){
 
 function ChatLog(props){
     return(
-        <ul>
-            {
-                props.chatEvents.sort((a,b) => a.timestamp - b.timestamp).map(event => {
-                return(
-                    <li key={event.timestamp + event.type + event.participantId}>
-                      {sortMessageType(event, props.participants, props.notation)}
-                    </li>
-                )
-            })
-        }
-        </ul>
+        <div className='chatLog'>
+            <h2>Chat</h2>
+            <ul>
+                {
+                    props.chatEvents.sort((a,b) => a.timestamp - b.timestamp).map(event => {
+                    return(
+                        <li key={event.timestamp + event.type + event.participantId}>
+                        {sortMessageType(event, props.participants, props.notation)}
+                        </li>
+                    )
+                })
+            }
+            </ul>
+        </div>
     )
 }
 

@@ -1,0 +1,304 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders the UI as expected 1`] = `
+<main
+  className="App"
+>
+  <section
+    className="mainContainer"
+  >
+    <div
+      className="stageLeft"
+    >
+      <div
+        className="topBar left"
+      >
+        <ul>
+          <li>
+            Chat
+          </li>
+          <li>
+            Participants (2)
+          </li>
+          <li>
+            Buttons
+          </li>
+        </ul>
+      </div>
+      <div
+        className="participantList"
+      >
+        <h2>
+          Users
+        </h2>
+        <ul>
+          <li>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+            />
+            <div
+              class="partInfo"
+            >
+              <h5>
+                Koren Templeton
+              </h5>
+              <h6>
+                on stage
+              </h6>
+            </div>
+          </li>
+          <li>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/doloredolorescupiditate.jpg?size=200x200&set=set1"
+            />
+            <div
+              class="partInfo"
+            >
+              <h5>
+                Caty Flucker
+              </h5>
+              <h6>
+                in session
+              </h6>
+            </div>
+          </li>
+          <li>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/etexercitationemassumenda.jpg?size=200x200&set=set1"
+            />
+            <div
+              class="partInfo"
+            >
+              <h5>
+                Frank Runciman
+              </h5>
+              <h6>
+                in session
+              </h6>
+            </div>
+          </li>
+          <li>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+            />
+            <div
+              class="partInfo"
+            >
+              <h5>
+                Ashla Attwool
+              </h5>
+              <h6>
+                on stage
+              </h6>
+            </div>
+          </li>
+          <li>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+            />
+            <div
+              class="partInfo"
+            >
+              <h5>
+                Axe Kubicka
+              </h5>
+              <h6>
+                left session
+              </h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="chatLog"
+      >
+        <h2>
+          Chat
+        </h2>
+        <ul>
+          <li>
+            <div
+              className="personChatMessage"
+            >
+              <img
+                alt="Avatar ID"
+                src="https://robohash.org/utlaborumfugit.jpg?size=200x200&set=set1"
+              />
+              <div
+                class="partInfo"
+              >
+                <h5>
+                  Axe Kubicka
+                   
+                  <span>
+                    Sun Sep 08 2019 15:23:30 GMT-0700 (Pacific Daylight Time)
+                  </span>
+                </h5>
+                <p>
+                  Hello world
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Caty Flucker
+                 
+                gave a thumbs up
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Frank Runciman
+                 
+                gave a thumbs down
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Koren Templeton
+                 
+                raised their hand
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Koren Templeton
+                 
+                clapped
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Koren Templeton
+                 
+                joined the chat
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Ashla Attwool
+                 
+                left the chat
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Axe Kubicka
+                 
+                joined the stage
+              </h6>
+            </div>
+          </li>
+          <li>
+            <div
+              className="personChat"
+            >
+              <h6>
+                Axe Kubicka
+                 
+                left the stage
+              </h6>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      className="stageRight"
+    >
+      <div
+        className="topBar right"
+      >
+        <ul>
+          <li>
+            Left Arrow Button
+          </li>
+          <li>
+            Stage
+          </li>
+          <li>
+            Leon's Screen X
+          </li>
+        </ul>
+      </div>
+      <div
+        className="stageLog"
+      >
+        <div
+          className="stageDisplay"
+        >
+          <div
+            className="isOnStage"
+          >
+            <h4>
+              Koren Templeton
+            </h4>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+            />
+          </div>
+          <div
+            className="isOnStage"
+          >
+            <h4>
+              Ashla Attwool
+            </h4>
+            <img
+              alt="User Avatar"
+              src="https://robohash.org/iustodoloremqueinventore.jpg?size=200x200&set=set1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    className="bottomFooter"
+  >
+    <div
+      className="randomButtons"
+    >
+      Button 1 2 3 and 4
+    </div>
+    <div
+      className="joinstuff"
+    >
+      Join stage
+    </div>
+  </section>
+</main>
+`;
